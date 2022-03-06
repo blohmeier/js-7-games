@@ -29,4 +29,8 @@ function generateComputerChoice() {
     computerChoiceDisplay.innerHTML = computerChoice;
 }
 
-function getResult
+function getResult() {
+    if (computerChoice === userChoice {
+        
+    })
+}
