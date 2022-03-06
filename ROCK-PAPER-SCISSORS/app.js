@@ -30,19 +30,18 @@ function generateComputerChoice() {
     }
     computerChoiceDisplay.innerHTML = computerChoice;
 }
-
 function getResult() {
     if (computerChoice === userChoice) {
         result = 'its a draw'
     }
     if (computerChoice === 'rock' && userChoice === 'paper') {
-        result = 'You Win!'
+        result = 'Paper covers Rock - You Win!'
     }
     if (computerChoice === 'rock' && userChoice === 'scissors') {
-        result = 'You Lose.'
+        result = 'Rock crushes Paper - You Lose.'
     }
     if (computerChoice === 'paper' && userChoice === 'scissors') {
-        result = 'You Win!'
+        result = 'Scissors cuts Paper - You Win!'
     }
     if (computerChoice === 'paper' && userChoice === 'rock') {
         result = 'Paper covers Rock - You Lose.'
@@ -53,4 +52,5 @@ function getResult() {
     if (computerChoice === 'scissors' && userChoice === 'paper') {
         result = 'Scissors cuts Paper - You Lose.'
     }
+    resultDisplay.innerHTML = result;
 }
