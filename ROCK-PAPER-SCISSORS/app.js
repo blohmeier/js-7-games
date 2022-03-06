@@ -38,7 +38,7 @@ function getResult() {
         result = 'Paper covers Rock - You Win!'
     }
     if (computerChoice === 'rock' && userChoice === 'scissors') {
-        result = 'Rock crushes Paper - You Lose.'
+        result = 'Rock crushes Scissors - You Lose.'
     }
     if (computerChoice === 'paper' && userChoice === 'scissors') {
         result = 'Scissors cuts Paper - You Win!'
@@ -47,7 +47,7 @@ function getResult() {
         result = 'Paper covers Rock - You Lose.'
     }
     if (computerChoice === 'scissors' && userChoice === 'rock') {
-        result = 'Rock crushes Paper - You Win!'
+        result = 'Rock crushes Scissors - You Win!'
     }
     if (computerChoice === 'scissors' && userChoice === 'paper') {
         result = 'Scissors cuts Paper - You Lose.'
