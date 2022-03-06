@@ -6,12 +6,14 @@ const possibleChoices = document.querySelectorAll('button');
 let userChoice
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-    userChoice = e.target.id
-    userChoiceDisplay.innerHTML = userChoice
-    generateComputerChoice()
+    userChoice = e.target.id;
+    userChoiceDisplay.innerHTML = userChoice;
+    generateComputerChoice();
 }))
 
 function generateComputerChoice() {
-    const randomNumber = Math.random() * possibleChoices.length // or you can use '*3'
-    
+    const randomNumber = Math.floor(Math.random() * possibleChoices.length + 1) //NOTES:
+     //1. '+ 1' is just for readability.
+     //2.  Can use ' * 3' instead of ' * possibleChoices.length' but then need to wrap in 'Math.floor(...'.
+    console.log(randomNumber);
 }
